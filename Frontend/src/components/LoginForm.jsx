@@ -28,6 +28,9 @@ const LoginForm = () => {
             e.preventDefault();
             setSubmitted(true);
         }
+        if (setErrMsg === "") {
+            setUsername(e.target.value);
+        }
     }
 
     return (
@@ -35,7 +38,7 @@ const LoginForm = () => {
         <div className='main'>
             <div className='login'>
                 <h2>Login Page</h2>
-                <form action='' method='get'>
+                <form action='' method='get' onSubmit={handleSubmit}>
                     <label htmlFor="username" className='username'>Enter Username</label>
                     <input type="text" placeholder='Username' onChange={handleUsername} className='input-username' value={username} />
 
