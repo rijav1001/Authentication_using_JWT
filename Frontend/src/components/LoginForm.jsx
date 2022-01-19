@@ -33,6 +33,14 @@ const LoginForm = () => {
         }
     }
 
+    const setToken = (token) => {
+        return localStorage.setItem('token', token);
+    }
+
+    const getToken = () => {
+        return localStorage.getItem('token');
+    }
+
     return (
         <>
         <div className='main'>
