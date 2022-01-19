@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+      {console.log(cities)}
       <div className='Container'>
         <h2>List of Cities</h2>
         <div className='sub-content'>
